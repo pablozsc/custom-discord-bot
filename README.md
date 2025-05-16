@@ -51,7 +51,8 @@ This project is a Discord bot built for the Concordium ecosystem to securely ver
 
 Use `.env.template` as a starting point and rename it to `.env`.
 
-```env
+```
+env
 # 🔧 Server and Github OAuth Configuration
 
 SERVER_URL=https://yourdomain.com
@@ -87,17 +88,17 @@ PG_HOST=
 PG_DATABASE=
 PG_PASSWORD=
 PG_PORT=
-
-    ⚠️ Never commit your .env file. Use .env.template for sharing.
+```
+⚠️ Never commit your .env file. Use .env.template for sharing.
 
 
 🧾 Slash Commands
 
 The bot automatically registers:
 
-    /start-again-delegator
+/start-again-delegator
 
-    /start-again-validator
+/start-again-validator
 
 These allow users to restart verification if needed.
 🐳 Docker Deployment
