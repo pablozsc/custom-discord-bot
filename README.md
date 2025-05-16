@@ -29,8 +29,21 @@ This project is a Discord bot built for the Concordium ecosystem to securely ver
 
 ## 📁 Folder Structure
 
-<pre lang="markdown"> <code>## 📁 Folder Structure ``` . ├── bot.js # Discord bot core logic ├── server.js # Express server (GitHub OAuth + state handling) ├── Dockerfile ├── docker-compose.yml ├── .env.template # Example environment file ├── init.sql # SQL to initialize verifications table ├── roles/ │ ├── delegatorVerification.js │ ├── devVerification.js │ └── validatorVerification.js └── utils/ └── automodIntegration.js ``` </code> </pre>
-
+```
+.
+├── bot.js                   # Discord bot core logic
+├── server.js                # Express server (GitHub OAuth + state handling)
+├── Dockerfile
+├── docker-compose.yml
+├── .env.template            # Example environment file
+├── init.sql                 # SQL to initialize verifications table
+├── roles/
+│   ├── delegatorVerification.js
+│   ├── devVerification.js
+│   └── validatorVerification.js
+└── utils/
+    └── automodIntegration.js
+```
 
 ---
 
