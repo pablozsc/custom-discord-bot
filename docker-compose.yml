@@ -7,14 +7,14 @@ services:
     env_file: .env
     depends_on:
       - db
-    restart: unless-stopped
+    restart: always
     networks:
       - botnet
 
   db:
     image: postgres:15
     container_name: postgres-db
-    restart: unless-stopped
+    restart: always
     environment:
       POSTGRES_USER: ${PG_USER}
       POSTGRES_PASSWORD: ${PG_PASSWORD}
