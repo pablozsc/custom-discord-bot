@@ -52,7 +52,6 @@ This project is a Discord bot built for the Concordium ecosystem to securely ver
 Use `.env.template` as a starting point and rename it to `.env`.
 
 ```
-env
 # 🔧 Server and Github OAuth Configuration
 
 SERVER_URL=https://yourdomain.com
@@ -92,30 +91,33 @@ PG_PORT=
 ⚠️ Never commit your .env file. Use .env.template for sharing.
 
 
-🧾 Slash Commands
+## 🧾 Slash Commands
 
 The bot automatically registers:
-
+```
 /start-again-delegator
 
 /start-again-validator
-
+```
 These allow users to restart verification if needed.
-🐳 Docker Deployment
+
+## 🐳 Docker Deployment
 
 To build and run:
-
+```
 docker compose build
 docker compose up -d
+```
 
 To connect to the PostgreSQL database:
-
+```
 docker exec -it postgres-db psql -U botuser -d concordium_verification
+```
 
-🌐 nginx Configuration (Required for GitHub OAuth)
+## 🌐 nginx Configuration (Required for GitHub OAuth)
 
 To properly handle GitHub OAuth redirects, your domain must expose the following paths:
-
+```
 server {
     server_name yourdomain.com;
 
@@ -149,10 +151,11 @@ server {
     server_name yourdomain.com;
     return 301 https://$host$request_uri;
 }
+```
 
-    📌 Replace yourdomain.com with your actual domain.
-    ⚠️ HTTPS is mandatory for GitHub OAuth and Discord API to work properly.
+📌 Replace yourdomain.com with your actual domain.
+⚠️ HTTPS is mandatory for GitHub OAuth and Discord API to work properly.
 
-📞 Support & Contributions
+## 📞 Support & Contributions
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
