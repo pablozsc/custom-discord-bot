@@ -154,6 +154,7 @@ server {
 ```
 
 📌 Replace yourdomain.com with your actual domain.
+
 ⚠️ HTTPS is mandatory for GitHub OAuth and Discord API to work properly.
 
 ## 📞 Support & Contributions
